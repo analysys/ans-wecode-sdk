@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="icon" href="../logo.png">
+  <link href="../../../../common/css/hwh5.css" rel="stylesheet" />
+  <%= htmlWebpackPlugin.options.vconsole == 'true' ? '<script type="text/javascript" src="../../../../common/js/vconsole.js"></script>' : '' %>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="text/javascript" src="../../../../common/js/hwh5.js"></script>
+  <!-- amd接入-->
+  <!-- <script src="https://cdn.bootcss.com/require.js/2.1.15/require.js"></script>
+  <script type="text/javascript">
+    requirejs(["../sdk/AnalysysAgent_WeCode_SDK.amd.min"], function (AnalysysAgent) {
+      AnalysysAgent.init({
+        appkey: '258352288dcc79e0', // APPKEY
+        debugMode: 2,
+        uploadURL: 'http://192.168.220.105:8089',
+        exposure: {
+          element_list: function () {
+            return document.getElementsByTagName('button')
+          }
+        }
+      })
+    });
+  </script> -->
+</body>
+
+</html>
